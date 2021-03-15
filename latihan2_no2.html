@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title> Konversi Nilai Angka Menjadi Nilai Huruf </title>
+</head>
+<script language="Javascript">
+	//<!-
+	function perkalian() {
+		var bil1=parseFloat(document.calculator.t1.value);
+		var bil2=parseFloat(document.calculator.t2.value);
+		var hasil=bil1*bil2;
+		document.calculator.t3.value = hasil
+	}
+	function pembagian() {
+		var bil1=parseFloat(document.calculator.t1.value);
+		var bil2=parseFloat(document.calculator.t2.value);
+		var hasil=bil1/bil2;
+		document.calculator.t3.value = hasil
+	}
+	function tambah() {
+		var bil1=parseFloat(document.calculator.t1.value);
+		var bil2=parseFloat(document.calculator.t2.value);
+		var hasil=bil1+bil2;
+		document.calculator.t3.value = hasil
+	}
+	function kurang() {
+		var bil1=parseFloat(document.calculator.t1.value);
+		var bil2=parseFloat(document.calculator.t2.value);
+		var hasil=bil1-bil2;
+		document.calculator.t3.value = hasil
+	}
+	//->
+</script>
+<body>
+	<form name="calculator"> <!-- -->
+	<table style="background-color: " class="tabel" align="center"> 
+   <center><h2>Kalkulator</h2></center>
+    <tr>
+    <td>Bilangan Pertama</td><td>:</td><td><input type="number" name="t1"></td> 
+   </tr>
+   <tr>
+    <td>Bilangan Kedua</td><td>:</td><td><input type="number" name="t2"></td> 
+   </tr>
+   <tr>
+    <td>Hasil</td><td>:</td><td><input type="text" name="t3" readonly></td>
+   </tr>
+   <tr>
+    <td colspan="4" align="center">
+    <input type="button" name="b1" value="   X   " onclick=perkalian()> <!--membuat button X -->
+	<input type="button" name="b2" value="   /   " onclick=pembagian()> <!--membuat button / -->
+	<input type="button" name="b3" value="   +   " onclick=tambah()> <!--membuat button + -->
+	<input type="button" name="b4" value="   -   " onclick=kurang()>  <!--membuat button - -->
+    </td>
+   </tr>
+  </table>
+	
+</form>
+</body>
+</html>
